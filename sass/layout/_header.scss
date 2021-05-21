@@ -44,7 +44,7 @@
       outline: none;
     }
 
-    @include tablet{
+    @include lg{
       display: block;
       position: absolute;
       top: 16px;
@@ -69,7 +69,7 @@
       transition: 1s ease;
     }
 
-    @include tablet{
+    @include lg{
       display: none;
     }
 
@@ -84,7 +84,7 @@
         transition: all 0.2s ease;
       }
 
-      @include tablet{
+      @include lg{
         font-size: 2rem;
         margin-bottom: 10px;
       }
@@ -101,7 +101,7 @@
       height: 100vh;
       background-size: cover;
 
-      @include tablet{
+      @include xl{
         height: 100%;
       }
     }

@@ -76,7 +76,7 @@ const hamburgerMenu = document.querySelector('.navbar-hamburger');
 const navigation = document.querySelector('.navbar-menu');
 
 hamburgerMenu.addEventListener('click', function (e){
-  //  e.preventDefault();
+    e.preventDefault();
     navigation.classList.toggle('show');
 
 });
@@ -86,7 +86,7 @@ function contactBtn(e){
     window.location.href = "#contact";
     e.preventDefault();
     e.stopPropagation();
-};
+}
 
 //Loading Animation
 let spinnerWrapper = document.querySelector('.spinner-wrapper');

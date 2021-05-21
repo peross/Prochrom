@@ -59,6 +59,18 @@ $footer-color: #4b4b4b;
 }
 
 //Screen Size
+@mixin xl{
+  @media screen and (max-width: 1300px){
+    @content;
+  }
+}
+
+@mixin lg{
+  @media screen and (max-width: 992px){
+    @content;
+  }
+}
+
 @mixin tablet{
   @media screen and (max-width: 768px){
     @content;
