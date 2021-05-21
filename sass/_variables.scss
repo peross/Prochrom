@@ -1,0 +1,72 @@
+//Colors
+$nav-background: #bdc3c7;
+$nav-font-color: #2c3e50;
+$light: #f7f7f7;
+$dark: #222121;
+$lime: #00cc66;
+$orange-red: #fb4b4e;
+$blue: #2541b2;
+$dark-red: #b02b2c;
+$footer-color: #4b4b4b;
+
+//Slider Buttons
+%slider-button-left{
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+%slider-button-right{
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+//Align Center
+%align-center{
+  display: flex;
+  align-items: center;
+}
+
+//Heading underline
+%heading-underline{
+  h2{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    &:after{
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: #b02b2c;
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%, 10px);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+//Screen Size
+@mixin tablet{
+  @media screen and (max-width: 768px){
+    @content;
+  }
+}
+
+@mixin mobile{
+  @media screen and (max-width: 280px){
+    @content;
+  }
+}

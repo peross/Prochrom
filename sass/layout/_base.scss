@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+}
+
+section{
+  text-align: center;
+  margin-top: 40px;
+}
