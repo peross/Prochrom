@@ -72,14 +72,25 @@ prevBtn.addEventListener('click',function (){
 });
 
 //Hamburger Menu
-const hamburgerMenu = document.querySelector('.navbar-hamburger');
-const navigation = document.querySelector('.navbar-menu');
+const mainMenu = document.querySelector('.main-menu');
+const openMenu = document.querySelector('.open-menu');
+const closeMenu = document.querySelector('.close-menu');
 
-hamburgerMenu.addEventListener('click', function (e){
-    e.preventDefault();
-    navigation.classList.toggle('show');
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
 
-});
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+
+    $('.main-menu a').on('click', function (){
+        $('.main-menu').hide();
+    });
+}
+
+function close(){
+    mainMenu.style.top = '-110%';
+}
 
 //Contact Button
 function contactBtn(e){
@@ -95,3 +106,6 @@ window.addEventListener('load', function (){
    // spinnerWrapper.style.display = 'none';
     spinnerWrapper.parentElement.removeChild(spinnerWrapper);
 })
+
+//Modal Window
+
